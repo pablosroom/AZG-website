@@ -18,13 +18,15 @@
   --sand: #f7f5f2;
   --sand-border: #e7e1d8;
   --blush: #f3e8e1;
+  /*variabelen voor de kleuren die ik gebruik*/
 
   --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-brand: "Manrope", "Inter", system-ui, sans-serif;
-
+  /*fonts*/
   --pad-x: 80px;
 }
 
+/*browserinstellingen */
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 90px; }
 body {
@@ -40,6 +42,7 @@ ul { list-style: none; }
 a { color: inherit; text-decoration: none; }
 :focus-visible { outline: 3px solid var(--red-accent); outline-offset: 3px; }
 
+/*logo*/
 .logo { display: inline-flex; align-items: center; gap: 12px; }
 .logo__graphic {
   display: flex; align-items: center; justify-content: center;
@@ -54,6 +57,7 @@ a { color: inherit; text-decoration: none; }
 .logo--light .logo__line1,
 .logo--light .logo__line2 { color: #fff; }
 
+/*knopstijlen*/
 .btn {
   display: inline-flex; align-items: center; gap: 8px;
   padding: 12px 24px; border-radius: 4px;
@@ -65,6 +69,7 @@ a { color: inherit; text-decoration: none; }
 .btn--outline { border: 1px solid #000; color: var(--ink); background: transparent; }
 .btn--outline:hover { background: var(--ink); color: #fff; }
 .heart-icon { display: inline-flex; align-items: center; justify-content: center; width: 16px; height: 16px; }
+
 .pill {
   display: inline-flex; align-items: center; justify-content: center;
   padding: 16px 24px; border-radius: 999px;
@@ -74,6 +79,7 @@ a { color: inherit; text-decoration: none; }
 .pill:hover { filter: brightness(1.15); transform: translateY(-1px); }
 .pill--red { background: var(--red-accent); }
 .pill--dark { background: var(--ink-strong); }
+/*Navigatiebalk*/
 .navbar {
   position: sticky; top: 0; z-index: 10;
   display: flex; align-items: center; justify-content: space-between; gap: 24px;
@@ -101,6 +107,7 @@ a { color: inherit; text-decoration: none; }
 .hero__text p {
   font-weight: 800; font-style: italic; font-size: 40px; line-height: normal; color: #000;
 }
+/*call to action*/
 .cta-banner {
   display: flex; flex-direction: column; gap: 16px;
   padding: 32px 120px;
@@ -111,15 +118,18 @@ a { color: inherit; text-decoration: none; }
   font-weight: 800; font-size: 40px; line-height: 1.1; letter-spacing: -1px; color: var(--ink-900);
 }
 .cta-banner p { font-size: 18px; line-height: 1.6; color: var(--gray-700); }
+/*informatie over de crisis*/
 .focus { padding: 80px; background: var(--sand); }
 .focus__columns { display: flex; gap: 40px; align-items: flex-start; }
 .crisis-card { flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; gap: 18px; }
 .crisis-card h3 { font-family: var(--font-brand); font-weight: 800; font-size: 28px; color: var(--ink); }
 .crisis-card img { width: 100%; height: 280px; object-fit: cover; border-radius: 4px; }
 .crisis-card p { font-size: 24px; line-height: 1.6; color: var(--ink); }
+/*formaat voor een kop die ik meerdere keren gebruik*/
 .section-header { display: flex; flex-direction: column; align-items: center; gap: 16px; }
 .section-header h2 { text-align: center; font-weight: 700; color: var(--ink-strong); }
 .accent { width: 72px; height: 4px; border-radius: 999px; background: var(--red-accent); }
+/*verschillende call to actions*/
 .pathways {
   display: flex; flex-direction: column; align-items: center; gap: 56px;
   padding: 72px var(--pad-x); background: var(--sand);
@@ -141,6 +151,7 @@ a { color: inherit; text-decoration: none; }
 .path-card h3 { font-weight: 700; font-size: 32px; line-height: 1.2; color: var(--ink-strong); }
 .path-card p { font-weight: 500; font-size: 18px; line-height: 1.5; color: var(--gray-600); }
 .path-card .pill { align-self: flex-start; }
+
 .reviews {
   display: flex; flex-direction: column; align-items: center; gap: 48px;
   padding: 72px var(--pad-x); background: var(--sand);
@@ -149,6 +160,8 @@ a { color: inherit; text-decoration: none; }
 .reviews__intro .section-header h2 { font-size: 56px; line-height: 1.15; }
 .reviews__intro > p { max-width: 800px; text-align: center; font-size: 18px; line-height: 1.6; color: var(--gray-600); }
 .reviews__grid { display: flex; gap: 24px; width: 100%; align-items: stretch; }
+
+/*nep reviews*/
 .review {
   flex: 1 1 0; min-width: 0; min-height: 380px;
   display: flex; flex-direction: column; justify-content: space-between;
@@ -165,6 +178,7 @@ a { color: inherit; text-decoration: none; }
 }
 .review figcaption strong { font-weight: 700; color: var(--ink-strong); }
 .review figcaption span { line-height: 1.5; color: var(--gray-600); }
+/*contactformulier*/
 .contact { display: flex; flex-direction: column; gap: 40px; padding: 80px; background: #fff; }
 .contact__header { display: flex; flex-direction: column; gap: 12px; }
 .contact__header h2 { font-weight: 700; font-size: 36px; color: var(--ink-900); }
@@ -177,6 +191,7 @@ a { color: inherit; text-decoration: none; }
 .contact__info a, .contact__info .value { font-size: 16px; color: var(--ink-900); }
 .contact__info a:hover { color: var(--red); text-decoration: underline; }
 
+/*formulier*/
 .form-card {
   flex: 0 0 480px; max-width: 100%;
   display: flex; flex-direction: column; gap: 24px;
@@ -200,6 +215,8 @@ a { color: inherit; text-decoration: none; }
   transition: background-color .15s;
 }
 .submit:hover { background: #dc2626; }
+
+/*footer*/
 .footer {
   display: flex; flex-direction: column; gap: 32px;
   padding: 48px var(--pad-x) 32px; background: var(--ink-900);
